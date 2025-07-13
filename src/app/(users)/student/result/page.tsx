@@ -160,7 +160,7 @@ export default function ResultPage() {
     return (
         <TooltipProvider>
             <AnimatePresence>
-                <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={pageTransition} className="max-w-7xl mx-auto space-y-8 min-h-screen sm:px-6 lg:px-8 ">
+                <motion.div variants={pageVariants} initial="initial" animate="animate" exit="exit" transition={pageTransition} className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
                     {/* Header Section */}
                     <Card className="bg-primary shadow-xl rounded-xl border-none">
                         <CardContent className="p-6 sm:p-8">
