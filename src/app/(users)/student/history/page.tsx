@@ -203,7 +203,7 @@ export default function HistoryPage() {
 
     return (
         <TooltipProvider>
-            <div className="max-w-7xl mx-auto min-h-screen space-y-8">
+            <div className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
                 {isLoading ? (
                     <div className="flex items-center justify-center py-16">
                         <div className="text-center space-y-4">
