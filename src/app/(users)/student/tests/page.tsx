@@ -57,7 +57,7 @@ export default function StartNewTestPage() {
 
     return (
         <TooltipProvider>
-            <div className="max-w-7xl mx-auto space-y-8 min-h-screen">
+            <div className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
                 <Card className="bg-white shadow-md rounded-xl border border-gray-200 hover:shadow-lg transition-all duration-300" role="region" aria-label="Halaman mulai tes gaya belajar">
                     <CardContent className="p-4 sm:p-6 md:p-8">
                         <div className="space-y-4 sm:space-y-6">
