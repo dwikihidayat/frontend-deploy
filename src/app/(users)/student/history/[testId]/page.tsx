@@ -204,7 +204,7 @@ export default function TestDetailPage({ params }: { params: Promise<{ testId: s
 
     return (
         <TooltipProvider>
-            <div className="max-w-7xl mx-auto min-h-screen space-y-8 py-4 lg:px-8">
+            <div className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
                 {/* Header Section */}
                 <Card className="bg-primary shadow-lg rounded-lg border-none">
                     <CardContent className="p-6">
