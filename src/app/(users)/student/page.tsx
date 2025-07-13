@@ -288,7 +288,7 @@ export default function StudentDashboard() {
 
     return (
         <TooltipProvider>
-            <div className="max-w-7xl mx-auto sm:p-4 space-y-6 sm:space-y-8">
+            <div className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
                 {/* Header Section */}
                 <Card className="bg-primary shadow-lg rounded-lg border-none">
                     <CardContent className="p-4 sm:p-6">
