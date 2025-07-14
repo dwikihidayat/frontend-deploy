@@ -629,7 +629,7 @@ export default function RegisterStudentPage() {
 
             <div className="flex-1 hidden md:block bg-background overflow-hidden">
                 <div className="relative h-full w-full flex items-center justify-center p-12">
-                    <Image src="/register_siswa.svg" alt="Student Registration Illustration" fill className="object-cover drop-shadow-xl animate-float" priority sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw" />
+                    <Image src="/register_siswa.png" alt="Student Registration Illustration" fill className="object-cover drop-shadow-xl animate-float" priority sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw" />
                 </div>
             </div>
         </div>
