@@ -249,7 +249,7 @@ function LoginIllustration() {
     return (
         <div className="flex-1 hidden md:block bg-background">
             <div className="relative h-full w-full flex items-center justify-center p-12">
-                <Image src="/login.svg" alt="Login Illustration" fill className="object-cover drop-shadow-xl animate-float" priority sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw" />
+                <Image src="/login.png" alt="Login Illustration" fill className="object-cover drop-shadow-xl animate-float" priority sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw" />
             </div>
         </div>
     );
