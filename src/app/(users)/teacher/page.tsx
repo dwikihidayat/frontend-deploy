@@ -147,7 +147,7 @@ export default function DashboardGuru() {
     return (
         <TooltipProvider>
             <div className="min-h-screen text-gray-800">
-                <div className="max-w-7xl mx-auto">
+                <div className="sm:p-4 space-y-6 sm:space-y-8">
                     <Card className="bg-secondary shadow-md rounded-xl border-none mb-6 sm:mb-8">
                         <CardContent className="p-3 sm:p-4">
                             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-6">
