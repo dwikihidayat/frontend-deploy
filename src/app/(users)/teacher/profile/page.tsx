@@ -264,7 +264,7 @@ export default function TeacherProfilePage() {
     }
 
     return (
-        <div className="mx-auto space-y-6 sm:p-6 lg:p-8 min-h-screen max-w-7xl" style={{ overflowAnchor: "auto" }}>
+        <div className="sm:p-4 space-y-6 sm:space-y-8" style={{ overflowAnchor: "auto" }}>
             <Card className="bg-white shadow-lg border border-gray-100 rounded-sm hover:shadow-xl transition-all duration-300">
                 <CardHeader className="p-4 sm:p-6 lg:p-10 border-b border-gray-100">
                     <div className="flex justify-start mb-4">
