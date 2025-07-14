@@ -618,7 +618,7 @@ export default function RegisterPage() {
             <div className="flex-1 hidden md:block bg-background overflow-hidden">
                 <div className="relative h-full w-full flex items-center justify-center p-12">
                     <Image
-                        src="/register_guru.svg"
+                        src="/register_guru.png"
                         alt="Teacher Registration Illustration"
                         fill
                         className="object-cover drop-shadow-xl animate-float"
