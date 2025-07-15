@@ -6,6 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
 import api from "@/lib/axios";
 import { AxiosError } from "axios";
+
 // Tipe respons dari API
 interface DashboardResponse {
     total_siswa: number;
@@ -31,7 +32,6 @@ interface DashboardData {
     systemHealth: {
         database: boolean;
         api: boolean;
-        storage: boolean;
     };
 }
 
@@ -51,7 +51,6 @@ export default function DashboardOverview() {
         systemHealth: {
             database: false,
             api: false,
-            storage: false,
         },
     });
 
@@ -84,7 +83,6 @@ export default function DashboardOverview() {
                 systemHealth: {
                     database: true,
                     api: true,
-                    storage: false,
                 },
             });
 
@@ -258,7 +256,6 @@ export default function DashboardOverview() {
                                 <CardContent>
                                     {loading ? (
                                         <div className="space-y-3">
-                                            <Skeleton className="h-4 w-full" />
                                             <Skeleton className="h-4 w-full" />
                                             <Skeleton className="h-4 w-full" />
                                         </div>
