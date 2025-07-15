@@ -238,7 +238,7 @@ export default function UserManagementClient() {
             )}
             <Card className="bg-white shadow-sm">
                 <CardHeader className="border-b p-3 sm:p-4">
-                    <CardTitle className="text-lg sm:text-xl font-semibold">Manajemen Pengguna</CardTitle>
+                    <CardTitle className="text-lg sm:text-xl font-semibold">Manajemen User</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-4 sm:pt-6">
                     <div className="flex flex-col gap-3 sm:gap-4 mb-4 sm:mb-6">
