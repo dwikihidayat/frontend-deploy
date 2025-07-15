@@ -214,7 +214,7 @@ export default function StudentTablePage() {
                         <CardContent className="p-3 sm:p-4">
                             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 sm:gap-6">
                                 <div className="space-y-2 sm:space-y-3">
-                                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Filter Siswa & Gaya Belajar</h1>
+                                    <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">Manajemen Siswa & Gaya Belajar</h1>
                                     <p className="text-sm sm:text-base text-gray-300 max-w-2xl min-w-0 break-words">Tinjau hasil gaya belajar siswa untuk mendukung strategi pengajaran yang lebih efektif.</p>
                                 </div>
                             </div>
