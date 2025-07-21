@@ -14,7 +14,7 @@ function AboutPage() {
             name: "Wiga Baiihaqi",
             role: "Dosen",
             bio: "Ahli dibidang machine learning",
-            image: "/pakwiga.jpeg",
+            image: "/pakwiga.png",
         },
         {
             name: "Dwiki Hidayat",
