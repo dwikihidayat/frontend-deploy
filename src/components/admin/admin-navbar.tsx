@@ -49,7 +49,7 @@ export default function AdminNavbar({ children }: { children?: React.ReactNode }
                 duration: 2000,
                 position: "top-center",
             });
-            setTimeout(() => router.push("/"), 2000);
+            setTimeout(() => router.push("/login"), 2000);
         } catch (error) {
             console.error("Error signing out:", error);
             toast.error("Gagal logout. Mengarahkan ke beranda.", {
