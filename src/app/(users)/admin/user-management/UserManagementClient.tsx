@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogClose } from "@/components/ui/dialog";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { useForm } from "react-hook-form";
@@ -238,7 +237,7 @@ export default function UserManagementClient() {
             )}
             <Card className="bg-white shadow-sm">
                 <CardHeader className="border-b p-3 sm:p-4">
-                    <CardTitle className="text-lg sm:text-xl font-semibold">Manajemen User</CardTitle>
+                    <CardTitle className="text-lg sm:text-xl font-semibold">Manajemen Pengguna</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-4 sm:pt-6">
                     <div className="flex flex-col gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -335,24 +334,20 @@ export default function UserManagementClient() {
                         </div>
                         {/* Pagination */}
                         <div className="flex justify-between items-center mt-4">
-                            <Select
-                                value={rowsPerPage.toString()}
-                                onValueChange={(value) => {
-                                    setRowsPerPage(Number(value));
+                            <select
+                                value={rowsPerPage}
+                                onChange={(e) => {
+                                    setRowsPerPage(Number(e.target.value));
                                     setCurrentPage(1);
                                 }}
+                                className="w-[80px] p-2 border rounded-md"
                             >
-                                <SelectTrigger className="w-[80px]">
-                                    <SelectValue placeholder={rowsPerPage} />
-                                </SelectTrigger>
-                                <SelectContent className="bg-white">
-                                    {rowsPerPageOptions.map((size) => (
-                                        <SelectItem key={size} value={size.toString()}>
-                                            {size}
-                                        </SelectItem>
-                                    ))}
-                                </SelectContent>
-                            </Select>
+                                {rowsPerPageOptions.map((size) => (
+                                    <option key={size} value={size}>
+                                        {size}
+                                    </option>
+                                ))}
+                            </select>
                             <div className="flex items-center gap-2">
                                 <Button variant="outline" size="icon" onClick={() => setCurrentPage(1)} disabled={currentPage === 1}>
                                     <ChevronsLeft className="h-4 w-4" />
@@ -402,15 +397,11 @@ export default function UserManagementClient() {
                         </div>
                         <div>
                             <label htmlFor="gender">Jenis Kelamin</label>
-                            <Select value={watch("gender")} onValueChange={(value) => setValue("gender", value as "Laki-laki" | "Perempuan")}>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Pilih jenis kelamin" />
-                                </SelectTrigger>
-                                <SelectContent className="bg-white">
-                                    <SelectItem value="Laki-laki">Laki-laki</SelectItem>
-                                    <SelectItem value="Perempuan">Perempuan</SelectItem>
-                                </SelectContent>
-                            </Select>
+                            <select value={watch("gender")} onChange={(e) => setValue("gender", e.target.value as "Laki-laki" | "Perempuan")} className="w-full p-2 border rounded-md">
+                                <option value="">Pilih jenis kelamin</option>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
                             {errors.gender && <p className="text-red-500">{errors.gender.message}</p>}
                         </div>
                         <input type="hidden" {...register("role")} value="admin" />
