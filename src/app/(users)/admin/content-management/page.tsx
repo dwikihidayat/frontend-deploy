@@ -450,7 +450,7 @@ function EditDialog({ item, onSave, onClose }: { item: Question | Recommendation
                                 <div>
                                     <label className="block text-sm font-medium mb-1">Opsi B</label>
                                     <Input
-                                        value={localItem.options[2]}
+                                        value={localItem.options[1]}
                                         onChange={(e) => {
                                             const newOptions = [...localItem.options];
                                             newOptions[1] = e.target.value;
