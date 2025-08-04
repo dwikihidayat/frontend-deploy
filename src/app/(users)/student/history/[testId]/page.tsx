@@ -325,7 +325,7 @@ export default function TestDetailPage({ params }: { params: Promise<{ testId: s
                     <p className="mb-4">Gunakan hasil tes ini untuk mengoptimalkan strategi belajar Anda</p>
                     <Button
                         onClick={() => router.back()}
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-6 py-2 transform hover:scale-105 transition-transform font-inter"
+                        className="bg-primary hover:bg-primary text-white font-medium rounded-full px-6 py-2 transform hover:scale-105 transition-transform font-inter"
                         aria-label="Kembali ke halaman sebelumnya"
                     >
                         <ChevronLeft className="mr-2 h-4 w-4" />
