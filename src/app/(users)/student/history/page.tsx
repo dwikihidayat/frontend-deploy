@@ -130,6 +130,14 @@ export default function HistoryPage() {
         }));
     };
 
+    // Moved formatDate before useMemo
+    const formatDate = (dateString: string) =>
+        new Date(dateString).toLocaleDateString("id-ID", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+        });
+
     const sortedTests = useMemo(() => {
         const sorted = [...tests];
         sorted.sort((a, b) => {
@@ -155,13 +163,6 @@ export default function HistoryPage() {
     const totalPages = Math.ceil(filteredTests.length / pageSize);
 
     const getStyleByDimension = (results: TestResult[], dimension: string) => results.find((r) => r.dimension === dimension);
-
-    const formatDate = (dateString: string) =>
-        new Date(dateString).toLocaleDateString("id-ID", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-        });
 
     const rowVariants = {
         hidden: { opacity: 0, y: 20 },
@@ -203,7 +204,7 @@ export default function HistoryPage() {
 
     return (
         <TooltipProvider>
-            <div className="mx-auto sm:p-4 space-y-6 sm:space-y-8">
+            <div className=" mx-auto sm:p-4 space-y-6 sm:space-y-8">
                 {isLoading ? (
                     <div className="flex items-center justify-center py-16">
                         <div className="text-center space-y-4">
